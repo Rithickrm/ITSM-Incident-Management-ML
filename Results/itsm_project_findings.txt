@@ -1,0 +1,12 @@
+ITSM INCIDENT MANAGEMENT USING MACHINE LEARNING
+
+ITSM incident priority prediction was developed using Machine Learning.
+Selected model: Logistic Regression.
+Test accuracy: 0.9897.
+Weighted precision: 0.9899.
+Weighted recall: 0.9897.
+Weighted F1-score: 0.9897.
+Logistic Regression and Random Forest were evaluated.
+Confusion matrices were generated to analyze classification errors.
+Priority-wise recall should be reviewed to assess critical incident detection.
+The current analysis uses the records loaded into the notebook; full-dataset validation is recommended.
