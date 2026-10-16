@@ -1,0 +1,90 @@
+
+# ITSM INCIDENT MANAGEMENT USING MACHINE LEARNING
+
+## 1. Introduction
+IT Service Management (ITSM) helps organizations manage IT incidents
+and restore normal services efficiently. Machine Learning can help
+support teams predict incident priorities and improve incident handling.
+
+## 2. Project Objective
+The main objective is to analyze IT incident data and build a Machine
+Learning model that predicts incident priority based on available
+incident information.
+
+## 3. Dataset Description
+The dataset contains IT incident information such as configuration item,
+incident status, impact, urgency, category, priority, reassignment count,
+and related incident information.
+
+Note: The current notebook analysis uses the first 1,000 records
+retrieved from the database. The findings should be validated using
+the complete dataset.
+
+## 4. Data Preprocessing
+The preprocessing work includes:
+- Handling missing and placeholder values.
+- Removing exact duplicate records.
+- Cleaning the target Priority column.
+- Selecting relevant input features.
+- Splitting the data into training and testing sets.
+- Applying median imputation to numerical features.
+- Applying most-frequent imputation and one-hot encoding to
+  categorical features.
+
+Priority classes with fewer than two records were excluded to enable
+stratified train-test splitting.
+
+## 5. Exploratory Data Analysis
+The analysis includes:
+- Priority distribution.
+- Impact and urgency distribution.
+- Incident status and category distribution.
+- Missing-value analysis.
+- Monthly incident counts based on Open_Time.
+- Incident resolution time analysis.
+- Reassignment and handling-time analysis.
+- Relationships between priority, impact, and urgency.
+
+## 6. Machine Learning Models
+Two classification models were developed:
+1. Logistic Regression
+2. Random Forest Classifier
+
+The models were evaluated using accuracy, weighted precision,
+weighted recall, weighted F1-score, and confusion matrices.
+
+The model with the higher weighted F1-score was selected as the
+best-performing model in the notebook.
+
+## 7. Results
+The notebook generates model comparison metrics, actual-versus-predicted
+priority results, confusion matrices, and prediction analysis charts.
+
+Insert the actual evaluation values from the notebook before submitting
+the final report. No performance values are assumed in this document.
+
+## 8. Limitations
+- The current analysis uses only the first 1,000 records.
+- Rare priority classes may be excluded from model training.
+- Performance on the full dataset has not yet been established.
+- Incident-volume forecasting and automated application deployment
+  are not included in the implemented classification workflow.
+
+## 9. Future Enhancements
+- Analyze the complete incident dataset.
+- Develop incident-volume forecasting.
+- Investigate automated incident categorization.
+- Explore additional classification models.
+- Develop a web application for incident priority prediction.
+- Validate model performance on unseen operational data.
+
+## 10. Conclusion
+This project demonstrates a Machine Learning workflow for IT incident
+priority classification, including data cleaning, exploratory analysis,
+preprocessing, model training, evaluation, and result export.
+
+Further validation using the complete dataset is recommended before
+using the model in a real IT support environment.
+
+## Author
+Rithick M
