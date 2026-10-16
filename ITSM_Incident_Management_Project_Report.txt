@@ -57,11 +57,22 @@ The model with the higher weighted F1-score was selected as the
 best-performing model in the notebook.
 
 ## 7. Results
-The notebook generates model comparison metrics, actual-versus-predicted
-priority results, confusion matrices, and prediction analysis charts.
 
-Insert the actual evaluation values from the notebook before submitting
-the final report. No performance values are assumed in this document.
+Two Machine Learning models, Logistic Regression and Random Forest,
+were evaluated for IT incident priority classification.
+
+The evaluation results obtained from the current test sample are:
+
+| Evaluation Metric | Logistic Regression | Random Forest |
+|-------------------|---------------------|---------------|
+| Accuracy          | 98.97%              | 98.97%        |
+| Weighted Precision| 98.99%              | 98.99%        |
+| Weighted Recall  | 98.97%              | 98.97%        |
+| Weighted F1-Score| 98.97%              | 98.97%        |
+
+Both models achieved identical evaluation metrics in the current
+evaluation. Further validation using the complete authorized dataset
+is required to confirm generalization performance.
 
 ## 8. Limitations
 - The current analysis uses only the first 1,000 records.
